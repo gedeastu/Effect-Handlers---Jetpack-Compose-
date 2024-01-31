@@ -11,10 +11,9 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.MutableState
-import androidx.compose.runtime.mutableIntStateOf
-import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.effecthandlers.RememberCoroutineScope.RememberCoroutineScope
 import com.example.effecthandlers.ui.theme.EffectHandlersTheme
 import kotlinx.coroutines.delay
 
@@ -28,9 +27,10 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    StateIncreament(number = remember {
-                        mutableIntStateOf(1)
-                    })
+                    RememberCoroutineScope()
+//                    StateIncreament(number = remember {
+//                        mutableIntStateOf(1)
+//                    })
                 }
             }
         }
