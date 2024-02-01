@@ -13,7 +13,7 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.MutableState
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.effecthandlers.DisposableEffect.DisposableEffectExample
+import com.example.effecthandlers.sideEffect.SideEffectExample
 import com.example.effecthandlers.ui.theme.EffectHandlersTheme
 import kotlinx.coroutines.delay
 
@@ -34,7 +34,9 @@ class MainActivity : ComponentActivity() {
 
                     //LaunchedEffectExample()
 
-                    DisposableEffectExample()
+                    //DisposableEffectExample()
+
+                    SideEffectExample()
                 }
             }
         }

@@ -1,4 +1,4 @@
-package com.example.effecthandlers.DisposableEffect
+package com.example.effecthandlers.disposableEffect
 
 import android.widget.Toast
 import androidx.compose.foundation.clickable

@@ -1,4 +1,4 @@
-package com.example.effecthandlers.LaunchedEffect
+package com.example.effecthandlers.launchedEffect
 
 import android.widget.Toast
 import androidx.compose.foundation.clickable

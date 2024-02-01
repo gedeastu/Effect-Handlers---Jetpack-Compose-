@@ -1,4 +1,4 @@
-package com.example.effecthandlers.RememberCoroutineScope
+package com.example.effecthandlers.rememberCoroutineScope
 
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
