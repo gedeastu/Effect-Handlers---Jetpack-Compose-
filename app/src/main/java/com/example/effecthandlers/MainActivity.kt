@@ -13,7 +13,7 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.MutableState
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.effecthandlers.LaunchedEffect.LaunchedEffectExample
+import com.example.effecthandlers.DisposableEffect.DisposableEffectExample
 import com.example.effecthandlers.ui.theme.EffectHandlersTheme
 import kotlinx.coroutines.delay
 
@@ -27,10 +27,14 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
+
                     //RememberCoroutineScope(name = remember {
                     //    mutableStateOf("Click me")
                     //})
-                    LaunchedEffectExample()
+
+                    //LaunchedEffectExample()
+
+                    DisposableEffectExample()
                 }
             }
         }
