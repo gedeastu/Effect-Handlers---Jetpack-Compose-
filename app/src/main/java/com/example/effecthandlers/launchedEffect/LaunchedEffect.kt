@@ -22,7 +22,7 @@ fun LaunchedEffectExample(){
     var state by remember { mutableStateOf(true) }
     val context = LocalContext.current
 
-    //with state, when clicked it will show toast one more time, if do it again the toast will not showing
+    //with state, when launched the app the toast will showing and then when clicked button it will show toast one more time, if do it again the toast will not showing
     LaunchedEffect(key1 = state,){
         //delay(1000L)
         Toast.makeText(context,"Hello with State", Toast.LENGTH_LONG).show()

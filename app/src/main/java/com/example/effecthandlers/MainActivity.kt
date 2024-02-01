@@ -13,7 +13,7 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.MutableState
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.effecthandlers.sideEffect.SideEffectExample
+import com.example.effecthandlers.snapShotFlow.SnapshotFlowExample
 import com.example.effecthandlers.ui.theme.EffectHandlersTheme
 import kotlinx.coroutines.delay
 
@@ -28,15 +28,19 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
 
+                    SnapshotFlowExample()
+
+                    //RememberUpdatedStateExample()
+
                     //RememberCoroutineScope(name = remember {
-                    //    mutableStateOf("Click me")
+                        //mutableStateOf("Click me")
                     //})
 
                     //LaunchedEffectExample()
 
                     //DisposableEffectExample()
 
-                    SideEffectExample()
+                    //SideEffectExample()
                 }
             }
         }
