@@ -28,6 +28,6 @@ fun SideEffectExample(){
     Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
         Text(modifier = Modifier.clickable {
             state++
-        }, text = "Hello Disposable $state")
+        }, text = "Hello Side Effect $state")
     }
 }
